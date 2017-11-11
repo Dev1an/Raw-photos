@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74D262A41DEA01F200EF51C8 /* Witness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D262A31DEA01F200EF51C8 /* Witness.framework */; };
+		74D262A51DEA01F200EF51C8 /* Witness.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74D262A31DEA01F200EF51C8 /* Witness.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74D262A61DEA01F800EF51C8 /* Witness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D262A31DEA01F200EF51C8 /* Witness.framework */; };
 		74E06C541DE6EA9D000109BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E06C531DE6EA9D000109BD /* AppDelegate.swift */; };
 		74E06C561DE6EA9D000109BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E06C551DE6EA9D000109BD /* ViewController.swift */; };
 		74E06C581DE6EA9D000109BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E06C571DE6EA9D000109BD /* Assets.xcassets */; };
 		74E06C5B1DE6EA9D000109BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E06C591DE6EA9D000109BD /* Main.storyboard */; };
 		74E06C661DE6EA9D000109BD /* Camera_RawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E06C651DE6EA9D000109BD /* Camera_RawTests.swift */; };
 		74E06C711DE6EA9D000109BD /* Camera_RawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E06C701DE6EA9D000109BD /* Camera_RawUITests.swift */; };
+		74E06C851DE6EC02000109BD /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E06C841DE6EC02000109BD /* PhotosUI.framework */; };
+		74E06C871DE6EC02000109BD /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E06C861DE6EC02000109BD /* Photos.framework */; };
+		74E06C8C1DE6EC02000109BD /* PhotoEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E06C8B1DE6EC02000109BD /* PhotoEditingViewController.swift */; };
+		74E06C8F1DE6EC02000109BD /* PhotoEditingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E06C8D1DE6EC02000109BD /* PhotoEditingViewController.xib */; };
+		74E06C931DE6EC02000109BD /* Develop.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 74E06C821DE6EC02000109BD /* Develop.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,9 +38,42 @@
 			remoteGlobalIDString = 74E06C4F1DE6EA9D000109BD;
 			remoteInfo = "Camera Raw";
 		};
+		74E06C911DE6EC02000109BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74E06C481DE6EA9D000109BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74E06C811DE6EC02000109BD;
+			remoteInfo = Develop;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		740625241DE733E600B0C4E9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				74D262A51DEA01F200EF51C8 /* Witness.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74E06C971DE6EC02000109BD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				74E06C931DE6EC02000109BD /* Develop.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		74D262A31DEA01F200EF51C8 /* Witness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Witness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E06C501DE6EA9D000109BD /* Camera Raw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camera Raw.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E06C531DE6EA9D000109BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74E06C551DE6EA9D000109BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +86,13 @@
 		74E06C6C1DE6EA9D000109BD /* Camera RawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Camera RawUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E06C701DE6EA9D000109BD /* Camera_RawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera_RawUITests.swift; sourceTree = "<group>"; };
 		74E06C721DE6EA9D000109BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74E06C821DE6EC02000109BD /* Develop.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Develop.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		74E06C841DE6EC02000109BD /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		74E06C861DE6EC02000109BD /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		74E06C8A1DE6EC02000109BD /* Develop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Develop.entitlements; sourceTree = "<group>"; };
+		74E06C8B1DE6EC02000109BD /* PhotoEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditingViewController.swift; sourceTree = "<group>"; };
+		74E06C8E1DE6EC02000109BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PhotoEditingViewController.xib; sourceTree = "<group>"; };
+		74E06C901DE6EC02000109BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D262A41DEA01F200EF51C8 /* Witness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,15 +118,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74E06C7F1DE6EC02000109BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D262A61DEA01F800EF51C8 /* Witness.framework in Frameworks */,
+				74E06C851DE6EC02000109BD /* PhotosUI.framework in Frameworks */,
+				74E06C871DE6EC02000109BD /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		74E06C471DE6EA9D000109BD = {
 			isa = PBXGroup;
 			children = (
+				74D262A31DEA01F200EF51C8 /* Witness.framework */,
 				74E06C521DE6EA9D000109BD /* Camera Raw */,
 				74E06C641DE6EA9D000109BD /* Camera RawTests */,
 				74E06C6F1DE6EA9D000109BD /* Camera RawUITests */,
+				74E06C881DE6EC02000109BD /* Develop */,
+				74E06C831DE6EC02000109BD /* Frameworks */,
 				74E06C511DE6EA9D000109BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +150,7 @@
 				74E06C501DE6EA9D000109BD /* Camera Raw.app */,
 				74E06C611DE6EA9D000109BD /* Camera RawTests.xctest */,
 				74E06C6C1DE6EA9D000109BD /* Camera RawUITests.xctest */,
+				74E06C821DE6EC02000109BD /* Develop.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +185,34 @@
 			path = "Camera RawUITests";
 			sourceTree = "<group>";
 		};
+		74E06C831DE6EC02000109BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74E06C841DE6EC02000109BD /* PhotosUI.framework */,
+				74E06C861DE6EC02000109BD /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74E06C881DE6EC02000109BD /* Develop */ = {
+			isa = PBXGroup;
+			children = (
+				74E06C8B1DE6EC02000109BD /* PhotoEditingViewController.swift */,
+				74E06C8D1DE6EC02000109BD /* PhotoEditingViewController.xib */,
+				74E06C901DE6EC02000109BD /* Info.plist */,
+				74E06C891DE6EC02000109BD /* Supporting Files */,
+			);
+			path = Develop;
+			sourceTree = "<group>";
+		};
+		74E06C891DE6EC02000109BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74E06C8A1DE6EC02000109BD /* Develop.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,10 +223,13 @@
 				74E06C4C1DE6EA9D000109BD /* Sources */,
 				74E06C4D1DE6EA9D000109BD /* Frameworks */,
 				74E06C4E1DE6EA9D000109BD /* Resources */,
+				74E06C971DE6EC02000109BD /* Embed App Extensions */,
+				740625241DE733E600B0C4E9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				74E06C921DE6EC02000109BD /* PBXTargetDependency */,
 			);
 			name = "Camera Raw";
 			productName = "Camera Raw";
@@ -178,6 +272,23 @@
 			productReference = 74E06C6C1DE6EA9D000109BD /* Camera RawUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		74E06C811DE6EC02000109BD /* Develop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74E06C941DE6EC02000109BD /* Build configuration list for PBXNativeTarget "Develop" */;
+			buildPhases = (
+				74E06C7E1DE6EC02000109BD /* Sources */,
+				74E06C7F1DE6EC02000109BD /* Frameworks */,
+				74E06C801DE6EC02000109BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Develop;
+			productName = Develop;
+			productReference = 74E06C821DE6EC02000109BD /* Develop.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +316,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 74E06C4F1DE6EA9D000109BD;
 					};
+					74E06C811DE6EC02000109BD = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7TD9A665TC;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 74E06C4B1DE6EA9D000109BD /* Build configuration list for PBXProject "Camera Raw" */;
@@ -223,6 +339,7 @@
 				74E06C4F1DE6EA9D000109BD /* Camera Raw */,
 				74E06C601DE6EA9D000109BD /* Camera RawTests */,
 				74E06C6B1DE6EA9D000109BD /* Camera RawUITests */,
+				74E06C811DE6EC02000109BD /* Develop */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +365,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74E06C801DE6EC02000109BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E06C8F1DE6EC02000109BD /* PhotoEditingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +404,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74E06C7E1DE6EC02000109BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E06C8C1DE6EC02000109BD /* PhotoEditingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +425,11 @@
 			target = 74E06C4F1DE6EA9D000109BD /* Camera Raw */;
 			targetProxy = 74E06C6D1DE6EA9D000109BD /* PBXContainerItemProxy */;
 		};
+		74E06C921DE6EC02000109BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74E06C811DE6EC02000109BD /* Develop */;
+			targetProxy = 74E06C911DE6EC02000109BD /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -301,6 +439,14 @@
 				74E06C5A1DE6EA9D000109BD /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74E06C8D1DE6EC02000109BD /* PhotoEditingViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74E06C8E1DE6EC02000109BD /* Base */,
+			);
+			name = PhotoEditingViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -399,9 +545,15 @@
 		74E06C761DE6EA9D000109BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7TD9A665TC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Witness-master/build/Debug",
+				);
 				INFOPLIST_FILE = "Camera Raw/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.Camera-Raw";
@@ -413,9 +565,15 @@
 		74E06C771DE6EA9D000109BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7TD9A665TC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Witness-master/build/Debug",
+				);
 				INFOPLIST_FILE = "Camera Raw/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.Camera-Raw";
@@ -486,6 +644,44 @@
 			};
 			name = Release;
 		};
+		74E06C951DE6EC02000109BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Develop/Develop.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Witness-master/build/Debug",
+				);
+				INFOPLIST_FILE = Develop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.Camera-Raw.Develop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		74E06C961DE6EC02000109BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Develop/Develop.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Witness-master/build/Debug",
+				);
+				INFOPLIST_FILE = Develop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.Camera-Raw.Develop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -505,6 +701,7 @@
 				74E06C771DE6EA9D000109BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74E06C781DE6EA9D000109BD /* Build configuration list for PBXNativeTarget "Camera RawTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +710,7 @@
 				74E06C7A1DE6EA9D000109BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74E06C7B1DE6EA9D000109BD /* Build configuration list for PBXNativeTarget "Camera RawUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +719,16 @@
 				74E06C7D1DE6EA9D000109BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74E06C941DE6EC02000109BD /* Build configuration list for PBXNativeTarget "Develop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74E06C951DE6EC02000109BD /* Debug */,
+				74E06C961DE6EC02000109BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PhotoEditingViewController" customModule="Develop" customModuleProvider="target">
+            <connections>
+                <outlet property="preview" destination="eXt-2h-sVw" id="2Hj-b1-57d"/>
+                <outlet property="view" destination="1" id="2"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView translatesAutoresizingMaskIntoConstraints="NO" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="243"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aNc-0i-CWK">
+                    <rect key="frame" x="118" y="211" width="151" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Camera raw connector" id="0xp-rC-2gr">
+                        <font key="font" metaFont="systemBold"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="eXt-2h-sVw">
+                    <rect key="frame" x="20" y="61" width="347" height="142"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="uIf-cs-z18"/>
+                </imageView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Bvc-hh-MFz">
+                    <rect key="frame" x="120" y="13" width="147" height="32"/>
+                    <buttonCell key="cell" type="push" title="Edit in Photoshop" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Pr4-M2-xU3">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="openPhotoshop:" target="-2" id="kHH-hq-gN1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="eXt-2h-sVw" firstAttribute="top" secondItem="aNc-0i-CWK" secondAttribute="bottom" constant="8" id="SGa-QJ-kPn"/>
+                <constraint firstItem="aNc-0i-CWK" firstAttribute="top" secondItem="1" secondAttribute="top" constant="15" id="UjJ-Lt-MWd"/>
+                <constraint firstItem="aNc-0i-CWK" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="Yyc-ge-6Zd"/>
+                <constraint firstItem="Bvc-hh-MFz" firstAttribute="top" secondItem="eXt-2h-sVw" secondAttribute="bottom" constant="20" id="ZiD-p7-asd"/>
+                <constraint firstAttribute="bottom" secondItem="Bvc-hh-MFz" secondAttribute="bottom" constant="20" id="cMi-OP-gde"/>
+                <constraint firstItem="Bvc-hh-MFz" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="gpD-wK-CsJ"/>
+                <constraint firstItem="eXt-2h-sVw" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="iD7-jv-vYm"/>
+                <constraint firstAttribute="trailing" secondItem="eXt-2h-sVw" secondAttribute="trailing" constant="20" id="um4-9t-LE0"/>
+            </constraints>
+            <point key="canvasLocation" x="107.5" y="84.5"/>
+        </customView>
+    </objects>
+</document>
