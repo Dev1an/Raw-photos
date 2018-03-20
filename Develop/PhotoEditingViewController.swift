@@ -32,7 +32,7 @@ class PhotoEditingViewController: NSViewController, PHContentEditingController {
 	
 	@IBAction func openPhotoshop(_ sender: Any) {
 		if let url = rawURL {
-			NSWorkspace().open([url], withAppBundleIdentifier: "com.adobe.Photoshop", options: .default, additionalEventParamDescriptor: nil, launchIdentifiers: nil)
+			NSWorkspace().open([url], withAppBundleIdentifier: "com.adobe.Photoshop", options: NSWorkspace.LaunchOptions.default, additionalEventParamDescriptor: nil, launchIdentifiers: nil)
 		}
 	}
     
