@@ -4,28 +4,26 @@ I really like the picktorial application because of the advanced selective adjus
 
 This is an image where I recovered highlights & shadows using Picktorial
 
-![DSC04509 Pictorial](DSC04509 Picktorial.jpeg)
+![DSC04509 Pictorial](DSC04509-Picktorial.jpeg)
 
 Notice the ugly banding around high contrast edges:
 
-![DSC04509 Picktorial markers](DSC04509 Picktorial markers.jpg)
+![DSC04509 Picktorial markers](DSC04509-Picktorial-markers.jpg)
 
 Now look at how Adobe Camera Raw renders the same image with comparable shadow & higlight adjustments:
 
-![DSC04509 ACR](DSC04509 ACR.jpg)
-
-
+![DSC04509 ACR](DSC04509-ACR.jpg)
 
 Here is another example.
 
 Picktorial shadow recovery:
 
-![DSC06078 Picktorial](/Users/damiaan/Documents/Projecten/Camera Raw/Pictorial comparison/DSC06078 Picktorial.jpg)
+![DSC06078 Picktorial](DSC06078-Picktorial.jpg)
 
 The banding appears again:
 
-![DSC06078 Picktorial markers](/Users/damiaan/Documents/Projecten/Camera Raw/Pictorial comparison/DSC06078 Picktorial markers.jpeg)
+![DSC06078 Picktorial markers](DSC06078-Picktorial-markers.jpeg)
 
 And no banding when using Adobe Camera raw:
 
-![DSC06078 ACR](/Users/damiaan/Documents/Projecten/Camera Raw/Pictorial comparison/DSC06078 ACR.jpg)
+![DSC06078 ACR](DSC06078-ACR.jpg)
