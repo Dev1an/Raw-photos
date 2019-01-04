@@ -1,3 +1,11 @@
+Non-destructive raw editing extension for Photos.app
+
+## Features
+
+ - Open the Adobe Camera Raw (ACR) application from adobe from within the Photos.app
+ - Save the ACR adjustments straight into your Photos library (the image with an embedded XMP file that contains all your non-destructive adjustments)
+ - Reopen previously saved ACR adjustments without the loss of your previous settings.
+
 ## Installation
 
 1. Open the "Camera Raw" application.
