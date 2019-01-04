@@ -14,6 +14,15 @@ Now look at how Adobe Camera Raw renders the same image with comparable shadow &
 
 ![DSC04509 ACR](DSC04509-ACR.jpg)
 
+Here is a side by side view of one detail of the above images:
+
+| Picktorial                                                   | Adobe camera raw                                   |
+| ------------------------------------------------------------ | -------------------------------------------------- |
+| ![Picktorial tower detail](DSC04509-Picktorial-tower-detail.png) | ![ACR tower detail](DSC04509-ACR-tower-detail.png) |
+
+
+
+
 Here is another example.
 
 Picktorial shadow recovery:
