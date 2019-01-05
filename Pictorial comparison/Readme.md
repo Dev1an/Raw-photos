@@ -36,3 +36,7 @@ The banding appears again:
 And no banding when using Adobe Camera raw:
 
 ![DSC06078 ACR](DSC06078-ACR.jpg)
+
+# Update
+
+I got feedback from the creators of Picktorial and they said: "We will investigate this issue and fix it as soon as possible." (January 6 december 2019)
